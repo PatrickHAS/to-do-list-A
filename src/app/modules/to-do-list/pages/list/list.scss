@@ -1,0 +1,53 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  height: 100vh;
+  height: 100dvh;
+
+  div.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .btn-primary,
+    app-input-add-item {
+      width: 100%;
+      margin-top: 30px;
+    }
+  }
+
+  main.container {
+    height: calc(100vh - 130px - 90px);
+    height: calc(100dvh - 130px - 90px);
+
+    overflow-y: auto;
+
+    &::-webkit-scrollbar {
+      width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+      background: var(--black-010);
+    }
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--primary);
+      border-radius: 5px;
+    }
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 90px;
+
+    border-top: 2px solid var(--black-010);
+  }
+}
